@@ -72,4 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 'read book'
 modif branch hasina
 
-modif nant
+modif nant conflict
