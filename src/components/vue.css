@@ -1,0 +1,60 @@
+
+
+
+
+.vue_container{
+    display: flex;
+    max-width: 320px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.menu{
+    background-color:black;
+    height: 36px;
+    width: 340px;
+}
+.p{
+    color: white;
+    text-transform: uppercase;
+}
+.btn{
+    background-color: crimson;
+    color: white;
+    margin: 20px;
+    border: none;
+    height: 30px;
+    width: 140px;
+}
+.type{
+    background-color: #eeeeee;
+    height: 700px;
+}
+.nom-de-joueur{
+    background-color: #ffffff;
+    width: 300px;
+    
+    max-width: 320px;
+    margin: auto;
+    flex-wrap: wrap;
+    height: 80px;
+    margin-top: 25px;
+}
+.joueur{
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+.nom-de-joueur h6{
+    margin: 0;
+    margin-left: 20px;
+}
+.des-joueur{
+    margin-left: 20px;
+    display: flex;
+    padding-right: 25px;
+    justify-content: space-between;
+    margin-top: -7px; 
+}
+.list-name{
+    margin-top: -20px;
+}
