@@ -1,0 +1,70 @@
+.vueb_container{
+    display: flex;
+    max-width: 320px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.menu{
+    background-color:black;
+    height: 36px;
+    width: 340px;
+    margin-top: 5px;
+    
+}
+.titre{
+    background-color: #eeeeee;
+    height: 700px;
+    
+}
+.h1{
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 4px;
+}
+.h1{
+    
+}
+.margin{
+    margin: 0;
+}
+.input{
+    margin-top: 13px;
+    margin-left: 20px;;
+}
+.test{
+  
+    background-color: #eeeeee;
+    width: 285px;
+    border-radius: 5px;
+    height: 26px;
+    margin-top: 3px;
+    margin-left: -2px;
+    border-color: #b5b5b5;
+}
+.type_de_joueur{
+    margin-top: 30px;
+}
+.click{
+    margin-left: 18px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.red{
+    margin-right: 30px;
+    width: 93px;
+    height: 34px;
+    background-color:#ff2c56;
+    border: none;
+    color: white;
+    
+}
+.annuler{
+    width: 86px;
+    background-color: #ffffff;
+    border: none;
+    color: black;
+}
+.maison{
+    
+}
