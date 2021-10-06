@@ -1,0 +1,72 @@
+.vuec_container{
+    display: flex;
+    max-width: 320px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.menu{
+    background-color:black;
+    height: 36px;
+    width: 340px;
+    margin-top: 5px;
+}
+.title{
+    background-color: #eeeeee;
+    width: 320px;
+    height: 700px;
+}
+.h2{
+    margin-left: 12px;
+}
+.tojo{
+    margin-left: 14px;
+    
+}
+.score{
+    
+    background-color: #ffffff;
+    max-width: 286px;
+    margin-left: 13px;
+    height: 160px;
+
+}
+.total{
+    margin-left: 218px;
+    text-decoration: underline;
+    display: flex;
+}
+.li{
+    margin-top: -42px;
+}
+.ajouter{
+    margin-left: 22px;
+    width: 239px;
+    height: 30px;
+    border: none;
+    background-color: #ff2c56;
+    color: #ffffff;
+}
+.tota{
+    margin-left: 17px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 239px;
+    margin-top: -30px;
+}
+.ajout{
+    margin-left: 22px;
+    width: 239px;
+    height: 30px;
+    border: none;
+    background-color: #00b31e;
+    color: #ffffff;
+    margin-top: 4px;
+}
+
+.marg{
+    margin-left: 22px;
+}
+.inputs{
+    margin-left: 22px;
+    margin: 0;
+}
