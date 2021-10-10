@@ -10,63 +10,119 @@
     width: 340px;
     margin-top: 5px;
 }
+.score{
+    background-color: #ffffff;
+    
+    width: 277px;
+    margin-left: 20px;
+    height: 170px;
+}
 .title{
     background-color: #eeeeee;
-    width: 320px;
-    height: 700px;
+    width: 340px;
+    height: 720px;
 }
-.h2{
-    margin-left: 12px;
-}
-.tojo{
-    margin-left: 14px;
-    
-}
-.score{
-    
-    background-color: #ffffff;
-    max-width: 286px;
-    margin-left: 13px;
-    height: 160px;
-
-}
-.total{
-    margin-left: 218px;
-    text-decoration: underline;
-    display: flex;
-}
-.li{
-    margin-top: -42px;
-}
-.ajouter{
-    margin-left: 22px;
-    width: 239px;
-    height: 30px;
-    border: none;
-    background-color: #ff2c56;
-    color: #ffffff;
-}
-.tota{
-    margin-left: 17px;
+.display{
     display: flex;
     justify-content: space-between;
-    max-width: 239px;
-    margin-top: -30px;
+    margin-left: 20px;
+    margin-top: -20px;
+    
 }
-.ajout{
-    margin-left: 22px;
-    width: 239px;
-    height: 30px;
-    border: none;
-    background-color: #00b31e;
-    color: #ffffff;
-    margin-top: 4px;
+.li{
+    margin-left: -21px;
 }
+.total{
+    margin: 24px;
+    text-decoration: underline;
 
-.marg{
-    margin-left: 22px;
 }
-.inputs{
-    margin-left: 22px;
+.h2{
+    margin-left: 20px;
+}
+.tojo{
+    margin-left: 20px;
+}
+.ajouter-1{
+    width: 232px;
+    margin-left: 20px;
+    height: 26px;
+    border: none;
+    background-color: #ff2c56;
+    color: white;
+}
+.score-1{
+    background-color: #ffffff;
+    
+    width: 277px;
+    margin-left: 20px;
+    height: 170px;
+}
+.papi{
+    margin-left: 20px;
+    
+}
+.display-1{
+    display: flex;
+    justify-content: space-between;
+}
+.h5-1{
+    width: 74px;
+    text-decoration: underline;
+}
+.score-2{
+    background-color: #ffffff;
+    
+    width: 277px;
+    margin-left: 20px;
+    height: 170px;
+    margin-top: 25px;
+    
+}
+.h3-1{
+    margin-left: 20px;
+}
+.display-2{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -17px;
+}
+.h5-3{
+    width: 74px;
+}
+.h6-1{
     margin: 0;
+    margin-left:20px;
+}
+.ajouter-2{
+    width: 232px;
+    margin-left: 20px;
+    height: 26px;
+    border: none;
+    background-color:#00b31e;
+    color: white;
+   
+}
+.input-1{
+    margin-left: 19px;
+    height: 20px;
+}
+.score-3{
+    background-color: #ffffff;
+    
+    width: 277px;
+    margin-left: 20px;
+    height: 34px;
+    margin-top: 25px;
+}
+.display-3{
+    display: flex;
+}
+.h3-5{
+    margin-left: 20px;
+    margin-top: 2px;
+}
+.h3-6{
+    margin-top: 2px;
 }
