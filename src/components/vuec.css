@@ -15,11 +15,11 @@
     
     width: 277px;
     margin-left: 20px;
-    height: 170px;
+    height: 157px;
 }
 .title{
     background-color: #eeeeee;
-    width: 340px;
+    width: 320px;
     height: 720px;
 }
 .display{
@@ -33,9 +33,9 @@
     margin-left: -21px;
 }
 .total{
-    margin: 24px;
+    width: 74px;
     text-decoration: underline;
-
+    margin-left: 150px;
 }
 .h2{
     margin-left: 20px;
@@ -45,18 +45,23 @@
 }
 .ajouter-1{
     width: 232px;
-    margin-left: 20px;
+
     height: 26px;
     border: none;
     background-color: #ff2c56;
     color: white;
+    position: absolute;
+    top: 256px;
+    left: 403px;
+    right: 0px;
+
 }
 .score-1{
     background-color: #ffffff;
     
     width: 277px;
     margin-left: 20px;
-    height: 170px;
+    height: 157px;
 }
 .papi{
     margin-left: 20px;
@@ -69,6 +74,7 @@
 .h5-1{
     width: 74px;
     text-decoration: underline;
+    margin-left: 150px;
 }
 .score-2{
     background-color: #ffffff;
@@ -104,6 +110,18 @@
     color: white;
    
 }
+.ajouter-3{
+    width: 232px;
+    margin-left: 20px;
+    height: 26px;
+    border: none;
+    background-color: #ff2c56;
+    color: white;
+    position: absolute;
+    top: 430px;
+    left: 383px;
+    right: 0px;
+}
 .input-1{
     margin-left: 19px;
     height: 20px;
@@ -120,9 +138,65 @@
     display: flex;
 }
 .h3-5{
+    margin-left: -81px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+.h3-6{
+    margin-top: 20px;
+}
+.pen{
+    display: flex;
+    justify-content: space-between;
+}
+.button-1{
+    margin-left: 48px;
+    background-color: #ffffff;
+    border: none;
+    height: 24px;
+    width: 31px;
+
+}
+.times{
+    margin-left: 25px;
+    background-color: #eeeeee;
+    border: none;
+    height: 24px;
+    width: 31px;
+}
+.home{
+    color: white;
+    background-color: black;
+    border: none;
+    margin-left: 11px;
+    margin-top: 9px;
+}
+.circle{
+    margin-left: 237px;
+    color: white;
+    background: black;
+    border: none;
+}
+.band{
+    color: #ff2c56;
+    margin-left: 78px;
+    width: 93px;
+    border-radius: 13px;
+    height: 28px;
+}
+.fa-band-aid{
+    margin-left: -52px;
+}
+.h3-7{
+    margin-top: 2px; 
+}
+.h3-8{
     margin-left: 20px;
     margin-top: 2px;
 }
-.h3-6{
-    margin-top: 2px;
+.h5-5{
+    margin-right: 28px;
+}
+.total-0{
+    margin-right: 28px;
 }
