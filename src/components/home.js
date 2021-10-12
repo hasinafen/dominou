@@ -1,5 +1,5 @@
-import './vue.css';
-  export  const vueA =(props)=>{
+import './home.css';
+  export  const vueA =()=>{
     return(
          <div >
              <div className = "vue_container">

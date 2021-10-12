@@ -1,0 +1,34 @@
+.about-container{
+    display: flex;
+    max-width: 320px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.about-menu{
+    background-color:black;
+    height: 36px;
+    width: 340px;
+    margin-top: 5px;
+}
+.about-titre{
+    background-color: #eeeeee;
+    width: 320px;
+    height: 700px;
+}
+.about-h2{
+    margin-left: 20px;
+}
+.class{
+    background-color: #ffffff;
+    width: 274px;
+    margin-left: 20px;
+    height: 431px;
+
+}
+.diva{
+    
+    width: 239px;
+    height: 342px;
+    margin-top: -372px;
+    margin-left: 35px;
+}
