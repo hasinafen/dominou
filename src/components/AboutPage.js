@@ -1,6 +1,6 @@
 import './about-page.css';
 
- const about =()=>{
+ const AboutPage =()=>{
      return(
          <div>
              <div className="about-container">
@@ -23,17 +23,14 @@ import './about-page.css';
               <span className="feno">Feno Hasina</span>  
              
              <h1 className="rot"><i className="fa fa-user-circle"></i></h1>
-            <h4 className="about-logo"><i className='fa fa-globe-africa'></i></h4>
+            <h4 className="about-logo"><i className='fab fa-facebook'></i></h4>
              <h4 className="about-envelope"><i className="fa fa-envelope"></i></h4>    
 
               </div>
-                   
-             
              <div className="div">
-             <span className="fen">Nantenaina Fahendrena</span>  
-             
+             <span className="fen">Nantenaina Fahendrena</span> 
              <h1 className="rote"><i className="fa fa-user-circle"></i></h1>
-              <h4 className="logo"><i className='fa fa-globe-africa'></i></h4>
+              <h4 className="logo"><i className=' fab fa-facebook'></i></h4>
               <h4 className="envelope"><i className="fa fa-envelope"></i></h4>  
              </div>
           </div>
@@ -49,4 +46,4 @@ import './about-page.css';
      )
 
  }
- export default about
+ export default AboutPage

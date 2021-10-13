@@ -1,7 +1,7 @@
 import './creation-page.css';
 
 
-export const vueb =()=>{
+ const CreationPage =()=>{
     return(
       <div>
       <div className="vueb_container">
@@ -47,3 +47,4 @@ export const vueb =()=>{
    </div>
     )
 }
+export default CreationPage
