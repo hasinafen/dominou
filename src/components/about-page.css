@@ -32,3 +32,80 @@
     margin-top: -372px;
     margin-left: 35px;
 }
+.feno{
+    
+    margin-left: 47px;
+}
+.rot{
+    margin: -10px;
+    margin-left: -10px;
+    margin-top: -25px;
+    background-color: black;
+    width: 44px;
+    height: 44px;
+    
+    border-radius: 40px;
+
+}
+.rote{
+    margin: -10px;
+    margin-left: -10px;
+    margin-top: -20px;
+    background-color: black;
+    width: 44px;
+    height: 44px;
+    
+    border-radius: 40px;
+}
+.about-logo{
+    margin-left: 47px;
+    position: absolute;
+    top: 389px;
+    border: none;
+    background-color: #ffffff;
+}
+.about-envelope{
+    margin-left: 69px;
+    position: absolute;
+    top: 389px;
+    border: none;
+    background-color: #ffffff;
+
+}
+.div{
+    margin-top: 19px;
+    margin-left: 10px;
+}
+.fen{
+    margin-left: 46px;
+}
+.logo{
+    margin-left: 46px;
+    position: absolute;
+    top: 445px;
+    border: none;
+    background-color: #ffffff;
+}
+.envelope{
+    margin-left: 68px;
+    position: absolute;
+    top: 445px;
+    border: none;
+    background-color: #ffffff
+}
+.about-fini{
+    margin-left: 10px;
+}
+.about-btn{
+    color: #eeeeee;
+    background-color: black;
+    border: none;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.info{
+    color: #eeeeee;
+    background-color: black;
+    border: none;
+    margin-left: 240px;
+}
