@@ -3,6 +3,7 @@
     max-width: 320px;
     margin: auto;
     flex-wrap: wrap;
+    position: relative;
 }
 .about-menu{
     background-color:black;

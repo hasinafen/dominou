@@ -7,7 +7,8 @@ import './creation-page.css';
       <div className="vueb_container">
       <section className="vueb">
         <div className="menu">
-        <i class="fa fa-home " ></i>
+        <button className="create-1"><i class="fa fa-home " ></i></button>
+        <button className="creat-2"><i className="fa fa-info-circle"></i></button>
           
         </div>
         <div className="titre">

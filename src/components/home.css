@@ -4,7 +4,7 @@
 
 .vue_container{
     display: flex;
-    max-width: 320px;
+    max-width: 340px;
     margin: auto;
     flex-wrap: wrap;
 }
@@ -58,4 +58,21 @@
 }
 .list-name{
     margin-top: -20px;
+}
+.ellipsi{
+    margin-left: 270px;
+    border: none;
+    background-color: #ffffff;
+}
+.page{
+    margin-top: -29px;
+}
+.page-1{
+    margin-top: -29px;
+}
+.page-2{
+    margin-top: -29px;
+}
+.page-3{
+    margin-top: -29px;
 }

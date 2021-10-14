@@ -1,10 +1,12 @@
 import './components/home.css';
 import CreationPage from './components/creation-page';
 import './components/creation-page';
-import './components/details-page.css';
+import DetailsPage from './components/DetailsPage';
 import './components/about-page.css';
 import AboutPage from './components/AboutPage';
+import HomePage from './components/HomePage';
 import './App.css';
+
 
 function App1 () {
 
@@ -14,11 +16,16 @@ function App1 () {
       <div>
         
         <div className="container">
-        <AboutPage/>
+        
+          
+          <HomePage/>
+          <CreationPage/>
+          <AboutPage/> 
+          <DetailsPage/> 
 
-        <CreationPage/>
-        <details-page/>
-        <home/>
+        
+          
+         
         
         </div>
         

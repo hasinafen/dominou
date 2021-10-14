@@ -1,5 +1,5 @@
-
-const details =()=>{
+import'./details-page.css';
+const DetailsPage =()=>{
     return(
         <div className="vuec_container">
       <div className="menu">
@@ -85,4 +85,4 @@ const details =()=>{
     )
 
 }
-export default details
+export default DetailsPage

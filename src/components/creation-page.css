@@ -7,7 +7,7 @@
 .menu{
     background-color:black;
     height: 36px;
-    width: 340px;
+    width: 320px;
     margin-top: 5px;
     
 }
@@ -32,7 +32,7 @@
 .test{
   
     background-color: #eeeeee;
-    width: 285px;
+    width: 268px;
     border-radius: 5px;
     height: 26px;
     margin-top: 3px;
@@ -49,13 +49,12 @@
     margin-top: 25px;
 }
 .red{
-    margin-right: 30px;
+    margin-right: 27px;
     width: 93px;
     height: 34px;
-    background-color:#ff2c56;
+    background-color: #ff2c56;
     border: none;
     color: white;
-    
 }
 .annuler{
     width: 86px;
@@ -63,6 +62,17 @@
     border: none;
     color: black;
 }
-.maison{
-    
+.create-1{
+    margin-left: 18px;
+    margin-top: 10px;
+    background-color: black;
+    color: #eeeeee;
+    border: none;
+}
+.creat-2{
+    margin-left: 225px;
+    margin-top: 10px;
+    background-color: black;
+    color: #eeeeee;
+    border: none;
 }

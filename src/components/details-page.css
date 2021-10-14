@@ -3,6 +3,7 @@
     max-width: 320px;
     margin: auto;
     flex-wrap: wrap;
+    position: relative;
 }
 .menu{
     background-color:black;
@@ -52,7 +53,7 @@
     color: white;
     position: absolute;
     top: 256px;
-    left: 673px;
+    left: 45px;
     right: 0px;
 
 }
@@ -119,7 +120,7 @@
     color: white;
     position: absolute;
     top: 430px;
-    left: 656px;
+    left: 25px;
     right: 0px;
 }
 .input-1{
