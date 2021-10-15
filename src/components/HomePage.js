@@ -1,5 +1,9 @@
 import './home.css';
-    const HomePage =()=>{
+    const HomePage =(props)=>{
+
+     
+
+
     return(
          <div >
              <div className = "vue_container">
@@ -9,7 +13,10 @@ import './home.css';
             
           </div>
           <div className="type">
-            <button className="btn">+ Nouvelle partie</button>
+            <button className="btn" onClick={props.onButtonAddClick}>+ Nouvelle partie
+            
+            
+            </button>
             <div className="list-name">
             <div className="nom-de-joueur">
             <button className="ellipsi"><i className="fa fa-ellipsis-v"></i></button>

@@ -1,8 +1,17 @@
+import { useState } from 'react';
 import './creation-page.css';
 
 
- const CreationPage =()=>{
-    return(
+
+
+
+
+ 
+const CreationPage =(props)=>{
+ 
+  
+
+    return (
       <div>
       <div className="vueb_container">
       <section className="vueb">
@@ -40,12 +49,23 @@ import './creation-page.css';
           </div>
           <div className="click">
             <button className="annuler">  <i class="fa fa-chevron-left"> </i> Annuler</button>
-            <button className="red"> Ajouter <i class="fa fa-plus"></i></button>
+
+            <button className="red" > Ajouter <i class="fa fa-plus"></i>
+              
+            {/* {
+              isHide === true && ""
+            }
+            {
+              isHide === false &&  ''
+            } */}
+            
+            </button>
           </div>
         </div>
       </section>
     </div>
+   
    </div>
     )
-}
+    }
 export default CreationPage
