@@ -1,9 +1,9 @@
 import'./details-page.css';
-const DetailsPage =()=>{
+const DetailsPage =(props)=>{
     return(
         <div className="vuec_container">
       <div className="menu">
-      <button className="home"><i className="fa fa-home"></i></button>
+      <button className="home" onClick={props.onClick}><i className="fa fa-home"></i></button>
       
       <button className="circle"><i className="fa fa-info-circle"></i></button>      
       </div> 
@@ -15,7 +15,7 @@ const DetailsPage =()=>{
         
         <div className="pen">
         
-        <h2 className="h2">partie de 3 joueur <button className="button-1"><i class="fa fa-pen"></i></button></h2>
+        <h2 className="h2">partie de 3 joueur <button className="button-1"><i className="fa fa-pen"></i></button></h2>
 
         </div>
         
@@ -34,7 +34,7 @@ const DetailsPage =()=>{
        
         </div>
        
-        <button className="ajouter-1"><i class="fa fa-plus"></i> ajouter score</button>
+        <button className="ajouter-1"><i className="fa fa-plus"></i> ajouter score</button>
       </div>
       <div className="score-1">
         <h3 className="papi"> Papi</h3>
@@ -47,7 +47,7 @@ const DetailsPage =()=>{
         <h5 className="h5-1">Total: </h5>
         <h5 className="h5-5">54</h5>
         </div>
-        <button className="ajouter-3"><i class="fa fa-plus"></i> ajouter score</button>
+        <button className="ajouter-3"><i className="fa fa-plus"></i> ajouter score</button>
 
         
       </div>
@@ -65,9 +65,12 @@ const DetailsPage =()=>{
         <h6 className="h6-1">score</h6>
         <div className="float">
         <input src="text" className="input-1" placeholder="Nouveau score" ></input>
-         <button className="times"><i class="fa fa-times" ></i> </button>
+         <button className="times"><i className="fa fa-times" ></i> </button>
         </div>
-        <button className="ajouter-2"><i class="fa fa-check"></i> ajouter score</button>
+        <button className="ajouter-2" >
+          
+          
+          <i className="fa fa-check"></i> ajouter score</button>
       </div>
       <div className="score-3">
         <div className="display-3">

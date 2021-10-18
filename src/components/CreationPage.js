@@ -1,5 +1,6 @@
-import { useState } from 'react';
+
 import './creation-page.css';
+import HomePage from './HomePage';
 
 
 
@@ -8,6 +9,7 @@ import './creation-page.css';
 
  
 const CreationPage =(props)=>{
+  
  
   
 
@@ -16,7 +18,7 @@ const CreationPage =(props)=>{
       <div className="vueb_container">
       <section className="vueb">
         <div className="menu">
-        <button className="create-1"><i class="fa fa-home " ></i></button>
+        <button className="create-1" onClick={props.onClikButton}><i className="fa fa-home " ></i></button>
         <button className="creat-2"><i className="fa fa-info-circle"></i></button>
           
         </div>
@@ -48,16 +50,11 @@ const CreationPage =(props)=>{
 
           </div>
           <div className="click">
-            <button className="annuler">  <i class="fa fa-chevron-left"> </i> Annuler</button>
+            <button className="annuler">  <i className="fa fa-chevron-left"> </i> Annuler</button>
 
-            <button className="red" > Ajouter <i class="fa fa-plus"></i>
+            <button className="red" onClick = {props.onButtonClick}> Ajouter <i className="fa fa-plus"></i>
               
-            {/* {
-              isHide === true && ""
-            }
-            {
-              isHide === false &&  ''
-            } */}
+            
             
             </button>
           </div>
