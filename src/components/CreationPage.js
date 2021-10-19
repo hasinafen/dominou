@@ -11,15 +11,14 @@ import HomePage from './HomePage';
 const CreationPage =(props)=>{
   
  
-  
-
+ 
     return (
       <div>
       <div className="vueb_container">
       <section className="vueb">
         <div className="menu">
         <button className="create-1" onClick={props.onClikButton}><i className="fa fa-home " ></i></button>
-        <button className="creat-2"><i className="fa fa-info-circle"></i></button>
+        <button className="creat-2" onClick={props.onClickAdd}><i className="fa fa-info-circle"></i></button>
           
         </div>
         <div className="titre">

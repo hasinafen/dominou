@@ -5,7 +5,7 @@ const DetailsPage =(props)=>{
       <div className="menu">
       <button className="home" onClick={props.onClick}><i className="fa fa-home"></i></button>
       
-      <button className="circle"><i className="fa fa-info-circle"></i></button>      
+      <button className="circle" onClick={props.onClickButtonAdd}><i className="fa fa-info-circle"></i></button>      
       </div> 
       <div className="title">
       <div className="jone">

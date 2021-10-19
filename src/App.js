@@ -16,6 +16,10 @@ function App1 () {
         setShowCreation(true)
         setShowHomePage(false)
     }
+    const handleClickAdd =()=>{
+        setShowAboutPage(true)
+        setShowCreation(false)
+    }
 
     const [ShowHomePage , setShowHomePage]=useState(true)
     const handleClikButton=()=>{
@@ -31,8 +35,15 @@ function App1 () {
     const [ ShowDetailsPage , setShowDetailsPage]=useState(false)
     const handleButtonClick = ()=>{
         setShowDetailsPage(true)
+        
     }
-    
+    const handleClickButtonAdd =()=>{
+        setShowAboutPage(true)
+        setShowDetailsPage(false)
+        setShowCreation(false)
+    }
+    const [ShowAboutPage , setShowAboutPage]=useState(false)
+
    
 
     console.log(ShowHomePage)
@@ -41,13 +52,12 @@ function App1 () {
   
   
      return(
-      
-     
-        <div>
+            <div>
+            <div>
             <div className="page-container">
                 {
-                    (ShowCreation === true && ShowDetailsPage === false) && 
-                    <CreationPage onButtonClick={handleButtonClick}   onClikButton = {handleClikButton}/>
+                     (ShowCreation === true && ShowDetailsPage === false) && 
+                    <CreationPage onButtonClick={handleButtonClick}   onClikButton = {handleClikButton} onClickAdd ={handleClickAdd}/>
                 }
                 {
                     
@@ -56,14 +66,21 @@ function App1 () {
                 {
                     ShowHomePage === true && <HomePage onButtonAddClick={handleButtonAddClick}/>
                 }
-
+                {
+                    ShowAboutPage === true && <AboutPage/>  
+                }
+                    
             </div>  
 
             {
-                ShowDetailsPage === true && <DetailsPage onClick = {handleClick}/> 
+                ShowDetailsPage === true && <DetailsPage onClick = {handleClick} onClickButtonAdd = {handleClickButtonAdd}/>
             }
-        </div>
+            </div>
       
+
+           </div>
+     
+       
     )
  
 }

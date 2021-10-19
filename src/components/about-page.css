@@ -1,112 +1,101 @@
+
+
 .about-container{
     display: flex;
     max-width: 320px;
     margin: auto;
     flex-wrap: wrap;
-    position: relative;
 }
 .about-menu{
-    background-color:black;
+    background-color: black;
     height: 36px;
-    width: 340px;
-    margin-top: 5px;
-}
-.about-titre{
-    background-color: #eeeeee;
     width: 320px;
-    height: 700px;
-}
-.about-h2{
-    margin-left: 20px;
-}
-.class{
-    background-color: #ffffff;
-    width: 274px;
-    margin-left: 20px;
-    height: 431px;
-
-}
-.diva{
-    
-    width: 239px;
-    height: 342px;
-    margin-top: -372px;
-    margin-left: 35px;
-}
-.feno{
-    
-    margin-left: 47px;
-}
-.rot{
-    margin: -10px;
-    margin-left: -10px;
-    margin-top: -25px;
-    background-color: black;
-    width: 44px;
-    height: 44px;
-    
-    border-radius: 40px;
-
-}
-.rote{
-    margin: -10px;
-    margin-left: -10px;
-    margin-top: -20px;
-    background-color: black;
-    width: 44px;
-    height: 44px;
-    
-    border-radius: 40px;
-}
-.about-logo{
-    margin-left: 47px;
-    position: absolute;
-    top: 389px;
-    border: none;
-    background-color: #ffffff;
-}
-.about-envelope{
-    margin-left: 69px;
-    position: absolute;
-    top: 389px;
-    border: none;
-    background-color: #ffffff;
-
-}
-.div{
-    margin-top: 19px;
-    margin-left: 10px;
-}
-.fen{
-    margin-left: 46px;
-}
-.logo{
-    margin-left: 46px;
-    position: absolute;
-    top: 445px;
-    border: none;
-    background-color: #ffffff;
-}
-.envelope{
-    margin-left: 68px;
-    position: absolute;
-    top: 445px;
-    border: none;
-    background-color: #ffffff
-}
-.about-fini{
-    margin-left: 10px;
+    margin-top: 5px;
 }
 .about-btn{
     color: #eeeeee;
     background-color: black;
     border: none;
-    margin-left: 10px;
     margin-top: 10px;
+    margin-left: 10px;
 }
-.info{
+.about-circle{
     color: #eeeeee;
     background-color: black;
     border: none;
     margin-left: 240px;
+}
+.titre{
+    background-color:#eeeeee ;
+    width: 320px;
+    height: 700px;
+}
+.about-left{
+    margin-left: 10px;
+}
+.about-titre{
+    background-color: #ffffff;
+    width: 287px;
+    height: 393px;
+    margin-left: 15px;
+}
+.about-span{
+  
+    width: 257px;
+    height: 329px;
+    margin-left: 31px;
+    margin-top: -342px;
+    position: relative;
+}
+.about-photo{
+    background-color: black;
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    margin-top: -19px;
+}
+.about-feno{
+    margin: 60px
+}
+.about-hasina{
+    color: black;
+    border: none;
+     background-color: #ffffff;
+    margin: -143px;
+    position: absolute;
+    top: 384px;
+}
+.about-fen{
+      border: none;
+      background-color: #ffffff;
+      position: absolute;
+      top: 241px;
+      left: 89px;
+}
+.about-hot{
+    background-color: black;
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    margin-top: -31px;
+}
+.about{
+    margin-left: 58px;
+}
+.about-h{
+    
+    border: none;
+    background-color: #ffffff;
+    margin: -143px;
+    position: absolute;
+    top: 453px;
+    left: 202px;
+
+}
+.about-f{
+    border: none;
+    background-color: #ffffff;
+    position: absolute;
+    top: 308px;
+    left: 89px;
 }
