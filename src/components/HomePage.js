@@ -9,7 +9,8 @@ import './home.css';
              <div className = "vue_container">
         <section className="home-1"> 
           <div className = "menu">
-         
+          <button className="about-c" onClick = {props.onClickT}><i className="fa fa-info-circle"></i></button>
+
             
           </div>
           <div className="type">

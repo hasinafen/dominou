@@ -16,7 +16,7 @@ const CreationPage =(props)=>{
       <div>
       <div className="vueb_container">
       <section className="vueb">
-        <div className="menu">
+        <div className="menu-1">
         <button className="create-1" onClick={props.onClikButton}><i className="fa fa-home " ></i></button>
         <button className="creat-2" onClick={props.onClickAdd}><i className="fa fa-info-circle"></i></button>
           
@@ -49,7 +49,7 @@ const CreationPage =(props)=>{
 
           </div>
           <div className="click">
-            <button className="annuler">  <i className="fa fa-chevron-left"> </i> Annuler</button>
+            <button className="annuler" onClick = {props.onClickAnnuler}>  <i className="fa fa-chevron-left"> </i> Annuler</button>
 
             <button className="red" onClick = {props.onButtonClick}> Ajouter <i className="fa fa-plus"></i>
               

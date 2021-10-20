@@ -1,13 +1,12 @@
  
 
+import './about-page.css';
 
-
- const AboutPage =()=>{
+ const AboutPage =(props)=>{
      return(
       <div className="about-container">
       <div className="about-menu">
-          <button className="about-btn"><i className="fa fa-home"></i></button>
-          <button className="about-circle"><i className="fa fa-info-circle"></i></button>
+          <button className="about-btn" onClick={props.onClickFunction}><i className="fa fa-home"></i></button>
       </div>
       <div className="titre">
       <h1 className="about-left">A propos</h1>
