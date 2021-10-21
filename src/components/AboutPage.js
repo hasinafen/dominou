@@ -9,7 +9,7 @@ import './about-page.css';
           <button className="about-btn" onClick={props.onClickFunction}><i className="fa fa-home"></i></button>
       </div>
       <div className="titre">
-      <h1 className="about-left">A propos</h1>
+      <h2 className="about-left">A propos</h2>
           <div className="about-titre"> 
                  
           </div>

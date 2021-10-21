@@ -3,7 +3,7 @@ const DetailsPage =(props)=>{
     return(
         <div className="vuec_container">
       <div className="menu">
-      <button className="home" onClick={props.onClick}><i className="fa fa-home"></i></button>
+      <button className="home" onClick={props.onClickD}><i className="fa fa-home"></i></button>
       
       <button className="circle" onClick={props.onClickButtonAdd}><i className="fa fa-info-circle"></i></button>      
       </div> 

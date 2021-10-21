@@ -21,28 +21,34 @@ const CreationPage =(props)=>{
         <button className="creat-2" onClick={props.onClickAdd}><i className="fa fa-info-circle"></i></button>
           
         </div>
-        <div className="titre">
-          <h1 className="h1">Nouvelle partie</h1>
-          <div className="type_de_joueur">
+        
+        <div className="titre-1">
+        <h1 className="post-1">Nouvelle partie</h1>
 
+        <div className="position">
+        <h1 className="post-2">Nouvelle partie</h1>
+        
+       </div>
+       
+          <div className="type_de_joueur">
           <div className="input">
             <h6 className="margin" >joueur1</h6>
-            <input src="text" className="test" placeholder="nom du joueur1"></input>
+            <input src="joueur1" className="test" placeholder="Nom du joueur1"></input>
 
           </div>
           <div className="input">
             <h6 className="margin">joueur2</h6>
-            <input src="text" className="test" placeholder="nom du joueur2"></input>
+            <input src="text" className="test" placeholder="Nom du joueur2"></input>
 
           </div>
           <div className="input">
             <h6 className="margin">joueur3</h6>
-            <input src="text" className="test" placeholder="nom du joueur3"></input>
+            <input src="text" className="test" placeholder="Nom du joueur3"></input>
 
           </div>
           <div className="input">
             <h6 className="margin">Score gagnant</h6>
-            <input src="text" className="test" placeholder="score gagnant"></input>
+            <input src="score" className="test" placeholder="Score gagnant"></input>
 
           </div>
 

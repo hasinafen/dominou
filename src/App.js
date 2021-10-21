@@ -30,7 +30,7 @@ function App1 () {
         setShowHomePage(true)
         setShowCreation(false)
     }
-    const handleClick =()=>{
+    const handleClickD =()=>{
         setShowHomePage(true)
         setShowDetailsPage(false)
         setShowCreation(false)
@@ -49,6 +49,7 @@ function App1 () {
     const handleButtonClick = ()=>{
         setShowDetailsPage(true)
         
+        
     }
     const handleClickButtonAdd =()=>{
         setShowAboutPage(true)
@@ -56,6 +57,11 @@ function App1 () {
         setShowCreation(false)
     }
     const [ShowAboutPage , setShowAboutPage]=useState(false)
+
+
+  
+
+    
 
    
 
@@ -70,7 +76,8 @@ function App1 () {
             <div className="page-container">
                 {
                      (ShowCreation === true && ShowDetailsPage === false) && 
-                    <CreationPage onButtonClick={handleButtonClick}   onClikButton = {handleClikButton} onClickAdd ={handleClickAdd} onClickAnnuler ={handleClickAnnuler}/>
+                    <CreationPage onButtonClick={handleButtonClick}   onClikButton = {handleClikButton}
+                     onClickAdd ={handleClickAdd} onClickAnnuler ={handleClickAnnuler}/>
                 }
                 {
                     
@@ -82,11 +89,12 @@ function App1 () {
                 {
                     ShowAboutPage === true && <AboutPage onClickFunction={handleClickFunction}/>  
                 }
+                
                     
             </div>  
 
             {
-                ShowDetailsPage === true && <DetailsPage onClick = {handleClick} onClickButtonAdd = {handleClickButtonAdd}/>
+                ShowDetailsPage === true && <DetailsPage onClickD = {handleClickD} onClickButtonAdd = {handleClickButtonAdd}/>
             }
             </div>
       
