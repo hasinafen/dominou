@@ -17,11 +17,13 @@
     width: 277px;
     margin-left: 20px;
     height: 157px;
+    margin-top: -18px;
 }
 .title{
     background-color: #eeeeee;
     width: 320px;
     height: 720px;
+    
 }
 .display{
     display: flex;
@@ -42,18 +44,22 @@
     margin-left: 20px;
 }
 .tojo{
-    margin-left: 20px;
+    margin: 14px;
+    margin-top: 3px;
+    
+    
 }
-.ajouter-1{
-    width: 232px;
 
-    height: 26px;
+.ajouter-1{
+    width: 242px;
+
+    height: 24px;
     border: none;
     background-color: #ff2c56;
     color: white;
     position: absolute;
-    top: 256px;
-    left: 45px;
+    top: 215px;
+    left: 37px;
     right: 0px;
 
 }
@@ -82,7 +88,7 @@
     
     width: 277px;
     margin-left: 20px;
-    height: 170px;
+    height: 183px;
     margin-top: 25px;
     
 }
@@ -98,35 +104,29 @@
 .h5-3{
     width: 74px;
 }
-.h6-1{
-    margin: 0;
-    margin-left:20px;
-}
-.ajouter-2{
+
+.details{
     width: 232px;
     margin-left: 20px;
-    height: 26px;
+    height: 24px;
     border: none;
     background-color:#00b31e;
     color: white;
    
 }
 .ajouter-3{
-    width: 232px;
+    width: 242px;
     margin-left: 20px;
-    height: 26px;
+    height: 24px;
     border: none;
     background-color: #ff2c56;
     color: white;
     position: absolute;
-    top: 430px;
-    left: 25px;
+    top: 394px;
+    left: 20px;
     right: 0px;
 }
-.input-1{
-    margin-left: 19px;
-    height: 20px;
-}
+
 .score-3{
     background-color: #ffffff;
     
@@ -200,4 +200,39 @@
 }
 .total-0{
     margin-right: 28px;
+}
+
+.place{
+   margin-left: 20px;
+   height: 22px;
+}
+.quiter{
+  margin: 0;
+  margin-left: 20px;
+}
+.joint{
+    margin: -6px;
+    margin-left: 1px;
+    color: #ffffff;
+}
+.joint-1{
+    margin-top: -10px;
+}
+.h5-2{
+    margin-left: 7px;
+}
+.start{
+    margin: 0;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.li{
+    margin-top: 6px;
+}
+.top{
+    margin-top: 10;
 }

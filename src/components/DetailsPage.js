@@ -8,19 +8,28 @@ const DetailsPage =(props)=>{
       <button className="circle" onClick={props.onClickButtonAdd}><i className="fa fa-info-circle"></i></button>      
       </div> 
       <div className="title">
-      <div className="jone">
-        
-
-        </div>
-        
+        <div className="top">
         <div className="pen">
         
         <h2 className="h2">partie de 3 joueur <button className="button-1"><i className="fa fa-pen"></i></button></h2>
 
         </div>
+        <div className="jone">
+        
+
+        </div>
+        
+        
         
         <div className="score">
-        <h3 className="tojo">Tojo</h3>
+          <div className="flex">
+          <h3 className="tojo">Tojo</h3>
+          
+          <h4 className="start"><i className="fa fa-star"></i></h4>
+          
+       
+          </div>
+        
        
         <div className="display">
         <ul className="li">
@@ -53,24 +62,35 @@ const DetailsPage =(props)=>{
       </div>
       <div className="score-2">
         <h3 className="h3-1"> Nant</h3>
-        <div className="display-2"> 
-        <h5 className="h5-2"> Aucun score</h5>
-        {/* <h5 className="h5-3">Total: 0</h5> */}
-        <div className="display-3">
-        <h5 className="h3-5">total:</h5>
-        <h5 className="h3-6">0</h5>
+          <div className="display-2"> 
+                  <h5 className="h5-2"> Aucun score</h5>
+                  
 
-        </div>
-        </div>
-        <h6 className="h6-1">score</h6>
-        <div className="float">
-        <input src="text" className="input-1" placeholder="Nouveau score" ></input>
-         <button className="times"><i className="fa fa-times" ></i> </button>
-        </div>
-        <button className="ajouter-2" >
+        
+              <div className="display-3">
+                  <h5 className="h3-5">total:</h5>
+                  <h5 className="h3-6">0</h5>
+
+              </div>
+             
+          </div>
+                         
+               
+
+                       <div className="joint-1">
+               <h5 className="quiter">Score</h5>
+
+                       <input src="text" className="place" value="Nouveau score" ></input>
+                        <button className="times"><i className="fa fa-times" ></i> </button>
+                          <h6 className="joint">m</h6>
+                         <button className="details" ><i className="fa fa-check"></i> ajouter score</button>
+                       </div>
+        
+
+                
           
           
-          <i className="fa fa-check"></i> ajouter score</button>
+          
       </div>
       <div className="score-3">
         <div className="display-3">
@@ -83,6 +103,8 @@ const DetailsPage =(props)=>{
      
       </div>
       
+        </div>
+     
      
     </div>
     )

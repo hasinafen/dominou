@@ -32,23 +32,30 @@ const CreationPage =(props)=>{
        
           <div className="type_de_joueur">
           <div className="input">
+           <h6 className="star"><i className="fa fa-star"></i></h6>
+
             <h6 className="margin" >joueur1</h6>
-            <input src="joueur1" className="test" placeholder="Nom du joueur1"></input>
+            <input type="text" className="test" onfocus="javascript: this.value=''" onblur="this.value='Entrez un pseudo'" value="Nom du joueur 1"></input>
+
 
           </div>
           <div className="input">
+          <h6 className="sta"><i className="fa fa-star"></i></h6>
             <h6 className="margin">joueur2</h6>
-            <input src="text" className="test" placeholder="Nom du joueur2"></input>
+            <input type="text" className="test" onfocus="javascript: this.value=''" onblur="this.value='Entrez un pseudo'" value="Nom du joueur 2"></input>
+
 
           </div>
           <div className="input">
             <h6 className="margin">joueur3</h6>
-            <input src="text" className="test" placeholder="Nom du joueur3"></input>
+            <input type="text" className="test" onfocus="javascript: this.value=''" onblur="this.value='Entrez un pseudo'" value="Nom du joueur 3"></input>
+
 
           </div>
           <div className="input">
             <h6 className="margin">Score gagnant</h6>
-            <input src="score" className="test" placeholder="Score gagnant"></input>
+            <input type="text" className="test" onfocus="javascript: this.value=''" onblur="this.value='Entrez un pseudo'" value="Score pour gagner"></input>
+
 
           </div>
 

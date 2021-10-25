@@ -40,6 +40,7 @@
     margin-top: 5px;
     margin-left: 1px;
     border-color: #a1a1a1;
+    border-width: 1px;
 }
 .type_de_joueur{
     margin-top: 30px;
@@ -88,4 +89,19 @@
 }
 .post-1{
    color: #eeeeee;
+   position: relative;
+}
+.star{
+    color: #ff2c56;
+   margin: 0;
+   position: absolute;
+   left: 60px;
+   top: 119px;
+}
+.sta{
+    color: #ff2c56;
+    margin: 0;
+    position: absolute;
+    left: 60px;
+    top: 182px;
 }
