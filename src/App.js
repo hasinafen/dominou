@@ -7,6 +7,13 @@ import AboutPage from './components/AboutPage';
 import HomePage from './components/HomePage';
 import { useEffect, useState } from 'react';
 import './App.css';
+ 
+
+
+
+
+
+
 
 
 function App1 () {
@@ -23,6 +30,10 @@ function App1 () {
     const handleClickAnnuler = ()=>{
         setShowHomePage(true)
         setShowCreation(false)
+    }
+    const handleSubmit =()=>{
+        setShowDetailsPage(true)
+        
     }
 
     const [ShowHomePage , setShowHomePage]=useState(true)
@@ -56,6 +67,7 @@ function App1 () {
         setShowDetailsPage(false)
         setShowCreation(false)
     }
+    
     const [ShowAboutPage , setShowAboutPage]=useState(false)
 
 
@@ -68,8 +80,7 @@ function App1 () {
     console.log(ShowHomePage)
  
   
-  
-  
+   
      return(
             <div>
             <div>
@@ -77,7 +88,7 @@ function App1 () {
                 {
                      (ShowCreation === true && ShowDetailsPage === false) && 
                     <CreationPage onButtonClick={handleButtonClick}   onClikButton = {handleClikButton}
-                     onClickAdd ={handleClickAdd} onClickAnnuler ={handleClickAnnuler}/>
+                     onClickAdd ={handleClickAdd} onClickAnnuler ={handleClickAnnuler} onSubmit={handleSubmit}/>
                 }
                 {
                     
@@ -97,6 +108,7 @@ function App1 () {
                 ShowDetailsPage === true && <DetailsPage onClickD = {handleClickD} onClickButtonAdd = {handleClickButtonAdd}/>
             }
             </div>
+            
       
 
            </div>

@@ -11,7 +11,7 @@ const DetailsPage =(props)=>{
         <div className="top">
         <div className="pen">
         
-        <h2 className="h2">partie de 3 joueur <button className="button-1"><i className="fa fa-pen"></i></button></h2>
+        <h2 className="h2">Partie de 3 joueur <button className="button-1"><i className="fa fa-pen"></i></button></h2>
 
         </div>
         <div className="jone">
