@@ -31,10 +31,7 @@ function App1 () {
         setShowHomePage(true)
         setShowCreation(false)
     }
-    const handleSubmit =()=>{
-        setShowDetailsPage(true)
-        
-    }
+ 
 
     const [ShowHomePage , setShowHomePage]=useState(true)
     const handleClikButton=()=>{
@@ -69,6 +66,10 @@ function App1 () {
     }
     
     const [ShowAboutPage , setShowAboutPage]=useState(false)
+    const handleSubmit=(e)=>{
+        console.log(e);
+        setShowDetailsPage(true)
+    }
 
 
   
@@ -87,8 +88,9 @@ function App1 () {
             <div className="page-container">
                 {
                      (ShowCreation === true && ShowDetailsPage === false) && 
-                    <CreationPage onButtonClick={handleButtonClick}   onClikButton = {handleClikButton}
-                     onClickAdd ={handleClickAdd} onClickAnnuler ={handleClickAnnuler} onSubmit={handleSubmit}/>
+                    <CreationPage 
+                        onSubmit = {handleSubmit}  
+                        onClickAnnuler ={handleClickAnnuler} />
                 }
                 {
                     

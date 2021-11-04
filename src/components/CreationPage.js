@@ -2,63 +2,90 @@
 import './creation-page.css';
 import HomePage from './HomePage';
 import { useEffect, useState } from 'react';
+import React from 'react';
 
 
 
 
  
 const CreationPage =(props)=>{
-    const [formData , setFormData]=useState({} )
-  
-    const handleChange = (value , key )=>{
-        setFormData({...formData, ...{[key]: value}});
-    }
+    const [inputValue , setInputValue]=useState("")
+    const [inputValueEvent, setInputValueEvent]=useState("")
+    const [inputValide , setInputValide]=useState("")
+    const [inputButton , setInputButton]=useState("")
+    const [isInputValueEmpty, setIsInputValueEmpty]=useState(null)
+    const [isInputInvalid , setIsInputInvalid]=useState(null)
+    const [isInputButton, setIsInputButton]=useState(null)
+    const [isInput , setInput]=useState(null)
 
-    const submit = ()=>{
-        if (isFormInValid()){
-            return
+
+
+
+    useEffect(() =>{
+        if (isInputValueEmpty ===true && isInputInvalid ===true && isInput ===true && isInputButton === true){
+            props.onSubmit({
+                joueur1:inputValue ,
+                joueur2 :inputValueEvent,
+                joueur3:inputValide,
+                score:inputButton
+            })
         }
-        alert(JSON.stringify(formData))
-        console.log(formData);
+
+    },[isInputValueEmpty, isInputInvalid, isInput,isInputButton ])
+    const handleInputChange = (e) =>{
+        setInputValue(e.target.value)
     }
+    const handleButtonClick = (e) =>{
+        if (inputValue === ''){
+            
+            console.log()
+            setIsInputValueEmpty(false)
+        }else{
+            setIsInputValueEmpty(true)
 
-    const isFormInValid =()=>{
-        let returnValue = false;
-        formElements.forEach(formElements=>{
-            if (formData[formElements.key]=== undefined){
-                alert(formElements.label + " is missing")
-                returnValue = true 
-      
-            }
-        })
-        return returnValue
-    }
-
-    const tab = [1, 25, 36, 78, true, { foo: 'bar' }]
-    const tab0 = tab[0]
-
-    const formElements = [{
-            label : "Joueur 1 ",
-            key : "Joueur 1"
-        },{
-            label : "Joueur 2",
-            key : "Joueur 2"
-        },{
-            label : "Joueur 3",
-            key : "Joueur 3"
-        },{
-            label : "Score gagnant",
-            key : "Score gagnant"
         }
-    ]
- 
- 
+        if (inputValueEvent === ''){
+            setIsInputInvalid(false)
+        }else{
+            setIsInputInvalid(true) 
+        }
+        if (inputValide === ''){
+            setInput(false)
+        }else{
+            setInput(true)
+        }
+        if (inputButton === ''){
+            setIsInputButton(false)
+        }else{
+            setIsInputButton(true)
+        }
+
+    }
+    const handleInput = (e)=>{
+        setInputValueEvent(e.target.value)
+    }
+
+    const handleValide = (e)=>{
+        setInputValide(e.target.value)
+    }
+
+    const handleInputButton=(e)=>{
+        setInputButton(e.target.value)
+    }
+    const [isValid , setIsValid]=useState({})
+    const handleValid =(e)=>{
+        setIsValid(e.target.value)
+        
+    }
+
+   
     return (
         <div>
             <div className="vueb_container">
+                
                 <section className="vueb">
                     <div className="menu-1">
-                        <button className="create-1" onClick={props.onClikButton}><i className="fa fa-home " ></i></button>
+                        <button className="create-1" onClick={props.onClikButton}><i className="fa fa-home"></i></button>
                         <button className="creat-2" onClick={props.onClickAdd}><i className="fa fa-info-circle"></i></button>
                     </div>
                     <div className="titre-1">
@@ -67,25 +94,36 @@ const CreationPage =(props)=>{
                             <h1 className="post-2">Nouvelle partie</h1>
                         </div>
                         <div className="type_de_joueur">
+                               
+                                
                             <div className="input">
+                                <label className="label">joueur 1 <span className="etoil">*</span></label>
+                                <input src="text" className="test" value={inputValue} onChange={handleInputChange} className="test"></input>
                                 {
-                                    formElements.map((formElement, index) =>{
-
-                                        console.log(formElement, index, formElements[index]);
-                                        return (
-                                            <div>
-                                                <label className="label-1">{formElement.label} <span className="label">*</span></label>
-                                                <input value={formData[formElement.label]}  onChange={(e)=>{e.preventDefault(); handleChange(e.target.value, formElement.key)}} className="test"></input>
-                                            </div>
-                                        )
-                                    })
+                                    isInputValueEmpty=== false && <h6 className="empty">required</h6>
+                                }
+                                <label className="label">joueur 2 <span className="etoil">*</span></label>
+                                <input src="text" className="test" value={inputValueEvent} onChange={handleInput}></input>
+                                {
+                                    isInputInvalid === false && <h6 className="empty">required</h6>
+                                }
+                                <label className="label">joueur 3</label>
+                                <input src="text" className="test"  value={inputValide} onChange={handleValide}></input>
+                                {
+                                    isInput === false && <h6 className="empty">required</h6>
+                                }
+                                <label className="label">score gagnant </label>
+                                <input src="text" className="test" value={inputButton} onChange={handleInputButton}></input>
+                                {
+                                    isInputButton=== false && <h6 className="empty">required</h6>
                                 }
                             </div>
                         </div>
                         <div className="click">
                             <button className="annuler" onClick = {props.onClickAnnuler}> <i className="fa fa-chevron-left"></i> Annuler</button>
-                            <button className="red" onClick = {props.onButtonClick} onClick={submit}> Ajouter <i className="fa fa-plus"></i></button>
+                            <button className="red" onClick = {props.onButtonClick} onClick = {handleButtonClick}  value = {isValid} onChange ={handleValid}> Ajouter <i className="fa fa-plus"></i></button>
                         </div>
+                        
                     </div>
                 </section>
             </div>

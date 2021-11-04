@@ -29,9 +29,10 @@
     margin: 0;
 }
 .input{
-    margin-top: 13px;
-    margin-left: 20px;;
+    margin: 0;
+    margin-left: 17px;
 }
+
 .test{
   
     background-color: #eeeeee;
@@ -106,9 +107,15 @@
     top: 182px;
 }
 .label{
+    font-weight: bold;
+}
+.etoil{
     color: #ff2c56;
-    font-weight: bold;
 }
-.label-1{
-    font-weight: bold;
+.empty{
+    color: red;
+    margin: 0;
+    margin-left: 229px;
+    margin-top: -15px;
 }
+
