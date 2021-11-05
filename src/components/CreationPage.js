@@ -9,6 +9,7 @@ import React from 'react';
 
  
 const CreationPage =(props)=>{
+    console.log(props)
     const [inputValue , setInputValue]=useState("")
     const [inputValueEvent, setInputValueEvent]=useState("")
     const [inputValide , setInputValide]=useState("")
@@ -30,7 +31,6 @@ const CreationPage =(props)=>{
                 score:inputButton
             })
         }
-
     },[isInputValueEmpty, isInputInvalid, isInput,isInputButton ])
     const handleInputChange = (e) =>{
         setInputValue(e.target.value)
@@ -38,7 +38,7 @@ const CreationPage =(props)=>{
     const handleButtonClick = (e) =>{
         if (inputValue === ''){
             
-            console.log()
+        
             setIsInputValueEmpty(false)
         }else{
             setIsInputValueEmpty(true)
@@ -72,17 +72,11 @@ const CreationPage =(props)=>{
     const handleInputButton=(e)=>{
         setInputButton(e.target.value)
     }
-    const [isValid , setIsValid]=useState({})
-    const handleValid =(e)=>{
-        setIsValid(e.target.value)
-        
-    }
-
-   
+  
     return (
         <div>
             <div className="vueb_container">
-                
+
                 <section className="vueb">
                     <div className="menu-1">
                         <button className="create-1" onClick={props.onClikButton}><i className="fa fa-home"></i></button>
@@ -121,7 +115,7 @@ const CreationPage =(props)=>{
                         </div>
                         <div className="click">
                             <button className="annuler" onClick = {props.onClickAnnuler}> <i className="fa fa-chevron-left"></i> Annuler</button>
-                            <button className="red" onClick = {props.onButtonClick} onClick = {handleButtonClick}  value = {isValid} onChange ={handleValid}> Ajouter <i className="fa fa-plus"></i></button>
+                            <button className="red" onClick = {props.onButtonClick} onClick = {handleButtonClick}  > Ajouter <i className="fa fa-plus"></i></button>
                         </div>
                         
                     </div>

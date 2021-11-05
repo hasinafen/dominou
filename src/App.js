@@ -7,6 +7,7 @@ import AboutPage from './components/AboutPage';
 import HomePage from './components/HomePage';
 import { useEffect, useState } from 'react';
 import './App.css';
+import ObjectCours from './components/ObjectCours';
  
 
 
@@ -18,7 +19,11 @@ import './App.css';
 
 function App1 () {
     const [ShowCreation , setShowCreation]= useState(false)
-
+    const [detailsProps, setDetailsProps]=useState({})
+    const [detailsJoueur2, setDetailsJoueur2]=useState({})
+    const [detailsJoueur3, setDetailsJoueur3]=useState({})
+    const [detailsScore, setDetailsScore]=useState({})
+    console.log(detailsProps ,'ok')
     const handleButtonAddClick =()=>{
         setShowCreation(true)
         setShowHomePage(false)
@@ -68,27 +73,22 @@ function App1 () {
     const [ShowAboutPage , setShowAboutPage]=useState(false)
     const handleSubmit=(e)=>{
         console.log(e);
+        setDetailsScore(e)
+        setDetailsJoueur3(e)
+        setDetailsJoueur2(e)
+        setDetailsProps(e)
         setShowDetailsPage(true)
+
     }
-
-
-  
-
-    
-
-   
-
-    console.log(ShowHomePage)
- 
-  
-   
+console.log(detailsProps.joueur2)  
      return(
             <div>
             <div>
             <div className="page-container">
                 {
-                     (ShowCreation === true && ShowDetailsPage === false) && 
+                               (ShowCreation === true && ShowDetailsPage === false) && 
                     <CreationPage 
+                        name = 'toto'
                         onSubmit = {handleSubmit}  
                         onClickAnnuler ={handleClickAnnuler} />
                 }
@@ -107,12 +107,19 @@ function App1 () {
             </div>  
 
             {
-                ShowDetailsPage === true && <DetailsPage onClickD = {handleClickD} onClickButtonAdd = {handleClickButtonAdd}/>
+                ShowDetailsPage === true && 
+                <DetailsPage 
+                    score={detailsScore.score}
+                    joueur3={detailsJoueur3.joueur3}
+                    joueur2={detailsJoueur2.joueur2}
+                    joueur1={detailsProps.joueur1}
+                    onClickD={handleClickD} 
+                    onClickButtonAdd={handleClickButtonAdd}
+                    />
             }
             </div>
-            
-      
 
+            <ObjectCours />
            </div>
      
        
