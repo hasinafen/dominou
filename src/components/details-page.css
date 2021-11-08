@@ -237,3 +237,11 @@
 .top{
     margin-top: 10;
 }
+.details-1{
+    width: 242px;
+    margin-left: 20px;
+    height: 24px;
+    border: none;
+    background-color: #ff2c56;
+    color: white;
+}
