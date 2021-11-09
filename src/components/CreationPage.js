@@ -115,7 +115,7 @@ const CreationPage =(props)=>{
                         </div>
                         <div className="click">
                             <button className="annuler" onClick = {props.onClickAnnuler}> <i className="fa fa-chevron-left"></i> Annuler</button>
-                            <button className="red" onClick = {props.onButtonClick} onClick = {handleButtonClick}  > Ajouter <i className="fa fa-plus"></i></button>
+                            <button className="red" onClick = {props.onButtonClick} onClick = {handleButtonClick}> Ajouter <i className="fa fa-plus"></i></button>
                         </div>
                         
                     </div>

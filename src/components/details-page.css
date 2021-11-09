@@ -13,11 +13,11 @@
 }
 .score{
     background-color: #ffffff;
-    
     width: 277px;
     margin-left: 20px;
     height: 157px;
     margin-top: -3px;
+    margin: 20px;
 }
 .title{
     background-color: #eeeeee;
@@ -52,16 +52,11 @@
 
 .ajouter-1{
     width: 242px;
-
     height: 24px;
     border: none;
     background-color: #ff2c56;
     color: white;
-    position: absolute;
-    top: 230px;
-    left: 37px;
-    right: 0px;
-
+    margin-left: 15px;
 }
 .score-1{
     background-color: #ffffff;
@@ -244,4 +239,11 @@
     border: none;
     background-color: #ff2c56;
     color: white;
+}
+.flexDiv{
+    display: flex;
+    background-color: #ffffff;
+    width: 278px;
+    height: 34px;
+    margin-left: 20px;
 }

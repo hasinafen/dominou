@@ -12,11 +12,9 @@ import AjouterScore from './components/AjouterScore';
 
 
 
+
 function App1 () {
     const [ShowCreation , setShowCreation]= useState(false)
-    const [detailsProps, setDetailsProps]=useState({})
-    const [detailsJoueur2, setDetailsJoueur2]=useState({})
-    const [detailsJoueur3, setDetailsJoueur3]=useState({})
     const [detailsScore, setDetailsScore]=useState({})
    
     const handleButtonAddClick =()=>{
@@ -43,28 +41,19 @@ function App1 () {
         setShowAboutPage(true)
         setShowHomePage(false)
     }
-   
-
     const [ ShowDetailsPage , setShowDetailsPage]=useState(false)
     const handleClickButtonAdd =()=>{
         setShowAboutPage(true)
         setShowDetailsPage(false)
         setShowCreation(false)
     }
-    
     const [ShowAboutPage , setShowAboutPage]=useState(false)
     const handleSubmit=(e)=>{
         console.log(e);
         setDetailsScore(e)
-        setDetailsJoueur3(e)
-        setDetailsJoueur2(e)
-        setDetailsProps(e)
         setShowDetailsPage(true)
     }
   
-
-  
-console.log(detailsProps.joueur2)  
      return(
             <div>
             <div>
@@ -88,9 +77,9 @@ console.log(detailsProps.joueur2)
                 ShowDetailsPage === true &&  
                 <DetailsPage 
                     score={detailsScore.score}
-                    joueur3={detailsJoueur3.joueur3}
-                    joueur2={detailsJoueur2.joueur2}
-                    joueur1={detailsProps.joueur1}
+                    joueur1={detailsScore.joueur1} 
+                    joueur2={detailsScore.joueur2}
+                    joueur3={detailsScore.joueur3}
                     onClickD={handleClickD} 
                     onClickButtonAdd={handleClickButtonAdd}                  
                     />
