@@ -8,7 +8,7 @@ import HomePage from './components/HomePage';
 import { useEffect, useState } from 'react';
 import './App.css';
 import ObjectCours from './components/ObjectCours';
-import AjouterScore from './components/AjouterScore';
+
 
 
 
@@ -49,11 +49,10 @@ function App1 () {
     }
     const [ShowAboutPage , setShowAboutPage]=useState(false)
     const handleSubmit=(e)=>{
-        console.log(e);
+       
         setDetailsScore(e)
         setShowDetailsPage(true)
     }
-  
      return(
             <div>
             <div>
@@ -68,11 +67,9 @@ function App1 () {
                     ShowHomePage === true && <HomePage onButtonAddClick={handleButtonAddClick} onClickT ={handleClickT}/>
                 }
                 {
-                    ShowAboutPage === true && <AboutPage onClickFunction={handleClickFunction}/>  
+                    ShowAboutPage === true && <AboutPage onClickFunction={handleClickFunction}/>
                 } 
             </div>  
-            
-               
             {
                 ShowDetailsPage === true &&  
                 <DetailsPage 
@@ -82,7 +79,7 @@ function App1 () {
                     joueur3={detailsScore.joueur3}
                     onClickD={handleClickD} 
                     onClickButtonAdd={handleClickButtonAdd}                  
-                    />
+                />
             }
             </div>
             <ObjectCours />

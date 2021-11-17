@@ -9,11 +9,10 @@ import React from 'react';
 
  
 const CreationPage =(props)=>{
-    console.log(props)
-    const [inputValue , setInputValue]=useState("")
-    const [inputValueEvent, setInputValueEvent]=useState("")
-    const [inputValide , setInputValide]=useState("")
-    const [inputButton , setInputButton]=useState("")
+    const [inputJoueur1 , setInputJoueur1]=useState("")
+    const [inputJoueur2, setInputJoueur2]=useState("")
+    const [inputJoueur3 , setInputJoueur3]=useState("")
+    const [inputScore , setInputScore]=useState("")
     const [isInputValueEmpty, setIsInputValueEmpty]=useState(null)
     const [isInputInvalid , setIsInputInvalid]=useState(null)
     const [isInputButton, setIsInputButton]=useState(null)
@@ -25,36 +24,34 @@ const CreationPage =(props)=>{
     useEffect(() =>{
         if (isInputValueEmpty ===true && isInputInvalid ===true && isInput ===true && isInputButton === true){
             props.onSubmit({
-                joueur1:inputValue ,
-                joueur2 :inputValueEvent,
-                joueur3:inputValide,
-                score:inputButton
+                joueur1:inputJoueur1 ,
+                joueur2 :inputJoueur2,
+                joueur3:inputJoueur3,
+                score:inputScore
             })
         }
     },[isInputValueEmpty, isInputInvalid, isInput,isInputButton ])
     const handleInputChange = (e) =>{
-        setInputValue(e.target.value)
+        setInputJoueur1(e.target.value)
     }
     const handleButtonClick = (e) =>{
-        if (inputValue === ''){
-            
-        
+        if (inputJoueur1 === ''){
             setIsInputValueEmpty(false)
         }else{
             setIsInputValueEmpty(true)
 
         }
-        if (inputValueEvent === ''){
+        if (inputJoueur2 === ''){
             setIsInputInvalid(false)
         }else{
             setIsInputInvalid(true) 
         }
-        if (inputValide === ''){
+        if (inputJoueur3 === ''){
             setInput(false)
         }else{
             setInput(true)
         }
-        if (inputButton === ''){
+        if (inputScore === ''){
             setIsInputButton(false)
         }else{
             setIsInputButton(true)
@@ -62,15 +59,15 @@ const CreationPage =(props)=>{
 
     }
     const handleInput = (e)=>{
-        setInputValueEvent(e.target.value)
+        setInputJoueur2(e.target.value)
     }
 
     const handleValide = (e)=>{
-        setInputValide(e.target.value)
+        setInputJoueur3(e.target.value)
     }
 
     const handleInputButton=(e)=>{
-        setInputButton(e.target.value)
+        setInputScore(e.target.value)
     }
   
     return (
@@ -92,24 +89,24 @@ const CreationPage =(props)=>{
                                 
                             <div className="input">
                                 <label className="label">joueur 1 <span className="etoil">*</span></label>
-                                <input src="text" className="test" value={inputValue} onChange={handleInputChange} className="test"></input>
+                                <input src="text" className="test" value={inputJoueur1} onChange={handleInputChange} className="test"></input>
                                 {
                                     isInputValueEmpty=== false && <h6 className="empty">required</h6>
                                 }
                                 <label className="label">joueur 2 <span className="etoil">*</span></label>
-                                <input src="text" className="test" value={inputValueEvent} onChange={handleInput}></input>
+                                <input src="text" className="test" value={inputJoueur2} onChange={handleInput}></input>
                                 {
                                     isInputInvalid === false && <h6 className="empty">required</h6>
                                 }
                                 <label className="label">joueur 3</label>
-                                <input src="text" className="test"  value={inputValide} onChange={handleValide}></input>
+                                <input src="text" className="test"  value={inputJoueur3} onChange={handleValide}></input>
                                 {
                                     isInput === false && <h6 className="empty">required</h6>
                                 }
                                 <label className="label">score gagnant </label>
-                                <input src="text" className="test" value={inputButton} onChange={handleInputButton}></input>
+                                <input src="text" className="test" value={inputScore} onChange={handleInputButton}></input>
                                 {
-                                    isInputButton=== false && <h6 className="empty">required</h6>
+                                    isInputButton === false && <h6 className="empty">required</h6>
                                 }
                             </div>
                         </div>
